@@ -1,0 +1,40 @@
+{
+  "name": "dsh-taskboard-epic",
+  "version": "0.1.0",
+  "description": "Epic panel for DeepSeek Harness: a client-side plugin that stacks the epic cards of a dsh-taskboard project in their epic:children order and lets the order of the module arcs be rearranged by drag or button.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zirscard/dsh-taskboard-epic.git"
+  },
+  "homepage": "https://github.com/zirscard/dsh-taskboard-epic#readme",
+  "bugs": {
+    "url": "https://github.com/zirscard/dsh-taskboard-epic/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  }
+}
